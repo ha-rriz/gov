@@ -1,0 +1,245 @@
+html {
+    margin: 0;
+    padding: 0;
+    background: rgb(0,0,0);
+
+    overflow: none;
+    color: white;
+    font-family: monospace;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.users {
+    text-align: left;
+    width: 100vw;
+    height: 150px;
+    z-index: 1;
+    position: fixed;
+    bottom: 0vh; right: 0; left: 0;
+    overflow-y: auto;
+
+    background: linear-gradient(rgba(148,148,148,0.8), rgba(78,78,78,0.9))
+}
+
+.userstext {
+    text-decoration: none;
+    z-index: 1;
+    filter: drop-shadow(0px 0px 40px rgba(0,0,0, 0.4));
+
+    text-align: left;
+    width: 100vw;
+    background: linear-gradient(to right, rgba(148,148,148,0.8), rgba(148,148,148, 1));
+    height: 50px;
+    position: fixed;
+    bottom: 134px; right: 0; left: 0;
+}
+
+.news {
+    position: fixed;
+    width: 70vw;
+    height: 40px;
+    justify-content: center;
+    top: 10px;
+
+    font-size: 30px;
+    text-align: center;
+    background: linear-gradient(to right, rgba(255,255,0,0.6), rgba(255,255,0,0.7));
+    filter: drop-shadow(0px 0px 40px rgba(255,255,0,0.4));
+    word-wrap: break-word;
+}
+
+.option_img:hover {
+    cursor: pointer;
+
+    transform: rotate3d(1, 0, 0, 360deg);
+}
+
+.xp {
+    position: fixed;
+    width: 0%;
+    height: 100%;
+    background: rgb(255, 177, 75)
+}
+
+.changer {
+    width: 70vw;
+    height: 40px;
+    position: fixed;
+
+    bottom: 40px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.changer:hover {
+    cursor: pointer;
+}
+
+.xp-text {
+    filter: drop-shadow(0px 0px 20px black);
+    position: fixed;
+    z-index: 3;
+    width: 70vw;
+    height: 40px;
+    font-size: 30px;
+    top: 60px;
+    text-align: center;
+    justify-content: center;
+    word-wrap: break-word;
+}
+
+.xp-bar {
+    position: fixed;
+    width: 70vw;
+    height: 40px;
+    top: 80px;
+
+    font-size: 30px;
+    background: linear-gradient(to right, rgb(0,0,0), rgb(25,25,25));
+    filter: drop-shadow(0px 0px 40px rgb(0,0,0));
+}
+
+.game-box {
+    text-align: center;
+
+    display:flex; 
+    flex-direction:column; 
+    justify-content:center;
+    width: 70vw;
+    position: fixed;
+    bottom: 0;
+    overflow: none;
+    min-height:100vh;
+}
+
+.money-text {
+    text-align: center;
+    word-wrap: break-word;
+
+    width: 30vw;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 30vh;
+}
+
+.money-clicker {
+    text-align: center;
+
+    display: flex;
+    user-select: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 30vw;
+    overflow: none;
+    position: fixed;
+    min-height: 100vh;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgb(0,0,0), rgb(0,35,0));
+}
+
+.options {
+    margin: 0;
+    display: flex;
+    text-align: center;
+    float: left;
+
+    height: 20vh;
+    align-items: center;
+}
+
+.topbar {
+    position: fixed;
+    width: 100%;
+    font-size: 5px;
+    float: left;
+    z-index: 7;
+    height: 20px;
+    background: linear-gradient(to right, rgba(257,257,257, 0.2), rgba(147,147,147, 0.3));
+}
+
+.t {
+    float: left;
+    text-decoration: none !important;
+    justify-content: center;
+    color: white;
+}
+
+@keyframes hell {
+    from {
+        background: rgb(0,0,0);
+    }
+
+    to {
+        background: rgb(100,0,0);
+    }
+}
+
+@keyframes hover {
+    from {
+        filter: brightness(1);
+    }
+    to {
+        filter: brightness(0.8);
+    }
+}
+
+@keyframes leave {
+    from {
+        filter: brightness(0.8);
+    }
+    to {
+        filter: brightness(1);
+    }
+}
+
+@keyframes click {
+    from {
+        filter: brightness(1.1);
+    }
+    to {
+        filter: brightness(0.8);
+    }
+}
+
+.money:hover {
+    cursor: pointer;
+    animation: hover 1s forwards;
+}
+
+.money:active {
+    animation: click 1s forwards;
+}
+
+.money {
+    animation: leave 1s forwards;
+}
+
+.fakebut:hover {
+    cursor: pointer;
+}
+
+.option {
+    width: 20vh;
+    margin:0 auto;
+    word-wrap: break-word;
+}
+
+.option_img {
+    height: 20vh;
+    object-fit: contain;
+}
+
+li {
+    height: 40px;
+    font-size: 25px;
+    text-decoration: none;
+}

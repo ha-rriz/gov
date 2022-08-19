@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html id="htmlelement">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdn.socket.io/4.4.1/socket.io.min.js" integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H" crossorigin="anonymous" ></script>
+
+        <title>Government Mayhem</title>
+        <link href="/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="topbar">
+            <h1 class="t">Government Mayhem: the game where society is horrible</h1>
+            <h1 style="left: 300px; position: fixed;" class="fakebut" onclick="Hide()">Hide Users</h1>
+            <h1 style="right: 115px; position: fixed;" class="fakebut" onclick="Theme()">Mateusz Theme</h1>
+            <h1 class="t" style="float:right"> Made by <a style="text-decoration: none !important; justify-content: center; color: rgb(128, 79, 241);" href="https://twitter.com/harru_p">harrup</a> (v1)</h1>
+        </div>
+        <h1 class="news" id="news">NEWS FLASH: Economy down..</h1>
+        <h1 class="xp-text" id="xp-text">0/100 xp gained | Level 1</h1>
+        <div class="xp-bar">
+            <div class="xp" id="xp"></div>
+        </div>
+        <div class="game-box" id="game-box">
+            <h1 id="economics"></h1>
+            <h1 id="citizens"></h1>
+            <br><br>
+            <div class="options" id="options">
+                <div class="option">
+                    <img onclick="Mayhem({type:'mayhem', action: 'destroy'})" class="option_img" id="destroy_building" src="imgs/destroy_building.png"></img>
+                    <h3 style="display: block;">Destroy Building (+2500 cash)</h3>
+                </div>
+                
+                <div class="option">
+                    <img onclick="Mayhem({type: 'normal', thing: 'cat', action: 'buy'})" class="option_img" id="buy_cat" src="imgs/buy_cat.png"></img>
+                    <h3 style="display: block;">Buy Cat (-5000 cash)</h3>
+                </div>
+                
+                <div class="option">
+                    <img onclick="Mayhem({type: 'mayhem', action: 'lay'})" class="option_img" id="lay_off" src="imgs/worker.png"></img>
+                    <h3 style="display: block;">Lay off Worker</h3>
+                </div>
+                
+                <div class="option">
+                    <img onclick="Mayhem({type: 'normal', action: 'hire', thing: 'worker'})" class="option_img" id="hire" src="imgs/worker_add.png"></img>
+                    <h3 style="display: block;">Hire Worker</h3>
+                </div>
+            </div>
+        </div>
+        <div class="game-box" id="second-box">
+            <h1>Upgrades</h1>
+            <br><br>
+            <div class="options" id="upgrades">
+                <div class="option" id="gems">
+                    <img onclick="Upgrade('gems')" class="option_img" id="gems" src="imgs/upgrades/gems.png"></img>
+                    <h3 style="display: block;">Gems</h3>
+                    <p style="display: block;">Clicks do twice the work.</p>
+                    <p style="display: block;">2000 cash</p>
+                </div>
+
+                <div class="option" id="enchanted_cat">
+                    <img onclick="Upgrade('enchanted_cat')" class="option_img" id="gems" src="imgs/upgrades/enchanted_cat.png"></img>
+                    <h3 style="display: block;">Enchanted Cat</h3>
+                    <p style="display: block;">Cats do twice the work.</p>
+                    <p style="display: block;">7800 cash</p>
+                </div>
+
+                <div class="option" id="worker_steroids">
+                    <img onclick="Upgrade('worker_steroids')" class="option_img" id="gems" src="imgs/upgrades/steroids.png"></img>
+                    <h3 style="display: block;">Worker Steroids</h3>
+                    <p style="display: block;">Workers do twice the work.</p>
+                    <p style="display: block;">180 cash</p>
+                </div>
+
+                <div class="option" id="office_lean">
+                    <img onclick="Upgrade('office_lean')" class="option_img" id="gems" src="imgs/upgrades/lean.png"></img>
+                    <h3 style="display: block;">Office Lean</h3>
+                    <p style="display: block;">Buildings do twice the work.</p>
+                    <p style="display: block;">4000 cash</p>
+                </div>
+            </div>
+        </div>
+        <h1 class="money-text">Click to mine money!</h1>
+        <a class="money-clicker" id="money-clicker" onclick="Mine()">
+            <img src="imgs/cash.png" class="money" id="money"></img>
+        </a>
+        <h1 class="userstext" id="userst">Users (oldest to newest)</h1>
+        <div class="users" id="users"></div>
+        <h1 class="changer" id="changer" onclick="Tab()"></h1>
+
+        <script src="main.js"></script>
+    </body>
+</html>
