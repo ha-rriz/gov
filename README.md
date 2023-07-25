@@ -18,9 +18,9 @@ Government Mayhem is a game where users can control a virtual city. The game has
 ### So uhh... how do I use this?
 
 Clone this archive with either git or github.
-<br>
+
 ![clone](https://cdn.discordapp.com/attachments/1093703948084445196/1133402135413919774/image.png)
-<br>
+
 Next, run "npm i" to install all dependencies (DO NOT UPGRADE! UNSURE IF IT WORKS ON CURRENT VERSIONS!)
 *You will need node and npm installed.*
 
