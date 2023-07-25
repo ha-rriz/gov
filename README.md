@@ -25,3 +25,5 @@ Next, run "npm i" to install all dependencies (DO NOT UPGRADE! UNSURE IF IT WORK
 *You will need node and npm installed.*
 
 Then just run node index! You're done!
+
+![screenshot](https://media.discordapp.net/attachments/1011435500172742657/1133400639704150026/image.png)
