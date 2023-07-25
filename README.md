@@ -1,9 +1,11 @@
 # gov
 
-## WARNING | THIS GAME IS INCREDIBLY OLD LOL
+## Disclaimer
 
+This game is old lol. We're talking 2022 old!
 Some code might not work on newer versions of dependencies. Some code is also coded horribly. I am sorry.
-This game is from 2022, I have since learnt to code better.
+
+## Main
 
 Welcome to Government Mayhem (v1): the game where society is horrible
 
