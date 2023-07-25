@@ -30,3 +30,10 @@ Next, run "npm i" to install all dependencies (DO NOT UPGRADE! UNSURE IF IT WORK
 Then just run node index! You're done!
 
 ![screenshot](https://media.discordapp.net/attachments/1011435500172742657/1133400639704150026/image.png)
+
+### ignore this part...
+
+All assets made by me and troxx (mateusz)
+His theme uses assets from stock photos. Don't know who made them lol.
+
+Have a nice day
