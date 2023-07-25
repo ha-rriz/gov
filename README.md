@@ -35,7 +35,7 @@ Then just run node index! You're done!
 
 ### ignore this part...
 
-All assets made by me and troxx (mateusz)
+Most assets made by me and troxx (mateusz)
 His theme uses assets from stock photos. Don't know who made them lol.
 
 Have a nice day
